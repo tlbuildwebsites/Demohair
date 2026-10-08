@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt – Demohair Coiffeur Demostadt</title>
+<meta name="description" content="Kontakt zu Demohair: Musterstrasse 1, 8000 Demostadt, Telefon 044 000 00 00, info@demohair.ch.">
+<meta name="theme-color" content="#F7F2EC">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fraunces-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__logo" href="index.html" aria-label="Demohair – zur Startseite"><img src="images/logo.svg" alt="Demohair" width="277" height="84"></a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <ul class="nav__list"><li><a class="nav__link" href="index.html">Start</a></li><li><a class="nav__link" href="ueber-uns.html">Über uns</a></li><li><a class="nav__link" href="leistungen.html">Leistungen & Preise</a></li><li><a class="nav__link" href="team.html">Team</a></li><li><a class="nav__link" href="galerie.html">Galerie</a></li><li><a class="nav__link" href="oeffnungszeiten.html">Öffnungszeiten</a></li><li><a class="nav__link" href="kontakt.html" aria-current="page">Kontakt</a></li></ul>
+      <a class="btn" href="online-termin.html">Online-Termin</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen"><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <ul><li><a class="m-link" href="index.html">Start</a></li><li><a class="m-link" href="ueber-uns.html">Über uns</a></li><li><a class="m-link" href="leistungen.html">Leistungen & Preise</a></li><li><a class="m-link" href="team.html">Team</a></li><li><a class="m-link" href="galerie.html">Galerie</a></li><li><a class="m-link" href="oeffnungszeiten.html">Öffnungszeiten</a></li><li><a class="m-link" href="kontakt.html" aria-current="page">Kontakt</a></li></ul>
+  <a class="btn" href="online-termin.html">Online-Termin buchen</a>
+  <p><a href="tel:+41440000000">044 000 00 00</a><br><a href="mailto:info@demohair.ch">info@demohair.ch</a></p>
+</div>
+<main id="inhalt">
+<section class="page-head bg-cream">
+  <div class="container page-head__grid">
+    <div class="reveal">
+      <span class="label">Kontakt</span>
+      <h1>Wir freuen uns auf <em>Sie</em></h1>
+    </div>
+    <div class="reveal">
+      <p class="lead">Rufen Sie uns an, schreiben Sie uns eine Nachricht oder kommen Sie direkt vorbei – der Kaffee steht bereit.</p>
+    </div>
+  </div>
+</section>
+<section class="section bg-beige">
+  <div class="container contact-grid">
+    <div class="contact-list reveal">
+      <div><span class="label">Adresse</span><address>Musterstrasse 1<br>8000 Demostadt</address></div>
+      <div><span class="label">Telefon</span><a href="tel:+41440000000">044 000 00 00</a></div>
+      <div><span class="label">E-Mail</span><a href="mailto:info@demohair.ch">info@demohair.ch</a></div>
+      <div><span class="status" data-status><span class="status__dot"></span><span class="status__text">Öffnungszeiten</span></span></div>
+      <p class="muted" style="font-size:.93rem;margin:0">5 Minuten zu Fuss vom Bahnhof Demostadt. Kundenparkplätze in der Einstellhalle «Zentrum», 1 Stunde gratis.</p>
+    </div>
+    <div class="reveal">
+      <h2>Schreiben Sie <em>uns</em></h2>
+      <form class="form" id="kontaktformular" novalidate>
+        <div class="field"><label for="vorname">Vorname *</label><input id="vorname" name="vorname" autocomplete="given-name" required></div>
+        <div class="field"><label for="nachname">Nachname *</label><input id="nachname" name="nachname" autocomplete="family-name" required></div>
+        <div class="field"><label for="email">E-Mail *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="telefon">Telefon</label><input id="telefon" name="telefon" type="tel" autocomplete="tel"></div>
+        <div class="field field--full"><label for="anliegen">Anliegen</label>
+          <select id="anliegen" name="anliegen"><option>Allgemeine Anfrage</option><option>Terminanfrage</option><option>Hochzeit &amp; Styling</option><option>Gutschein</option><option>Bewerbung / Schnuppern</option></select></div>
+        <div class="field field--full"><label for="nachricht">Nachricht *</label><textarea id="nachricht" name="nachricht" required></textarea></div>
+        <label class="check field--full"><input type="checkbox" required> Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden. *</label>
+        <div class="field--full"><button class="btn" type="submit">Nachricht senden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button></div>
+      </form>
+      <div class="form-success" role="status">
+        <div class="confirm__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <h3>Vielen Dank<span data-name></span>!</h3>
+        <p class="muted">Ihre Nachricht ist bei uns angekommen. Wir melden uns innerhalb eines Arbeitstages bei Ihnen.<br><small>(Demo: Es wurde keine Nachricht versendet.)</small></p>
+        <button class="btn btn--outline" type="button" data-form-reset>Neue Nachricht</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section bg-cream">
+  <div class="container">
+    <div class="map reveal">
+      <svg viewBox="0 0 800 350" role="img" aria-labelledby="map-title">
+  <title id="map-title">Stilisierte Karte: Demohair an der Musterstrasse 1, nahe Bahnhof und Stadtpark Demostadt</title>
+  <rect width="800" height="350" fill="#EDE4D8"/>
+  <g fill="#E2D6C6">
+    <rect x="30" y="25" width="150" height="105" rx="4"/><rect x="30" y="160" width="150" height="75" rx="4"/><rect x="30" y="265" width="150" height="70" rx="4"/>
+    <rect x="215" y="25" width="170" height="105" rx="4"/><rect x="215" y="265" width="170" height="70" rx="4"/>
+    <rect x="420" y="25" width="120" height="105" rx="4"/><rect x="575" y="25" width="200" height="105" rx="4"/>
+    <rect x="420" y="160" width="120" height="75" rx="4"/><rect x="420" y="265" width="120" height="70" rx="4"/>
+  </g>
+  <rect x="215" y="160" width="170" height="75" rx="4" fill="#D9CDB6"/>
+  <path d="M560 350 C 590 290, 640 265, 700 230 S 790 170, 800 150 L 800 350 Z" fill="#E2D6C6"/>
+  <path d="M548 350 C 580 285, 635 255, 695 222 S 780 160, 800 140" fill="none" stroke="#D3C5AE" stroke-width="20" stroke-linecap="round"/>
+  <g stroke="#FBF8F4" stroke-linecap="round" fill="none">
+    <path d="M0 145 H800" stroke-width="16"/><path d="M0 250 H560" stroke-width="12"/>
+    <path d="M200 0 V350" stroke-width="12"/><path d="M402 0 V350" stroke-width="16"/><path d="M558 0 V235" stroke-width="12"/>
+  </g>
+  <rect x="610" y="168" width="140" height="44" rx="22" fill="#2E2420" fill-opacity=".8"/>
+  <g font-family="DM Sans, sans-serif" font-size="9" letter-spacing="1.5" fill="#6E625B">
+    <text x="610" y="148.5">MUSTERSTRASSE</text><text x="40" y="148.5">MUSTERSTRASSE</text>
+    <text transform="translate(204 240) rotate(-90)">BAHNHOFSTRASSE</text>
+    <text x="60" y="253.5">LINDENWEG</text>
+    <text x="262" y="202" font-size="10">STADTPARK</text>
+    <text x="618" y="300" font-family="Fraunces, serif" font-style="italic" font-size="13" letter-spacing="0">Demo-Fluss</text>
+  </g>
+  <text x="680" y="194" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" letter-spacing="1.5" fill="#F7F2EC">BAHNHOF</text>
+  <g transform="translate(470 145)">
+    <path d="M-15 0 V-30 A15 15 0 0 1 15 -30 V0 Z" fill="#6E1E2B"/>
+    <circle cy="-26" r="5" fill="#F7F2EC"/>
+    <circle r="3.5" fill="#6E1E2B" cy="6"/>
+  </g>
+</svg>
+      <div class="map__label"><b>Demohair</b><br>Musterstrasse 1, 8000 Demostadt</div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a class="footer__logo" href="index.html"><img src="images/logo.svg" alt="Demohair" width="277" height="84" loading="lazy"></a>
+        <p>Ihr Coiffeur im Herzen von Demostadt – für Schnitt, Farbe und Styling mit Handschrift.</p>
+        <span class="status" data-status><span class="status__dot"></span><span class="status__text">Öffnungszeiten</span></span>
+      </div>
+      <div>
+        <span class="label">Besuchen</span>
+        <p>Demohair Coiffeur<br>Musterstrasse 1<br>8000 Demostadt</p>
+      </div>
+      <div>
+        <span class="label">Kontakt</span>
+        <ul>
+          <li><a href="tel:+41440000000">044 000 00 00</a></li>
+          <li><a href="mailto:info@demohair.ch">info@demohair.ch</a></li>
+          <li><a href="online-termin.html">Online-Termin buchen</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="label">Öffnungszeiten</span>
+        <ul>
+          <li>Di – Fr · 08:30 – 18:30</li>
+          <li>Do · bis 20:00</li>
+          <li>Sa · 08:00 – 15:00</li>
+          <li>So &amp; Mo geschlossen</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Demohair Coiffeur · Demostadt</span>
+      <span class="footer__credit">Website by <b>TL-Buildwebsites</b></span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
