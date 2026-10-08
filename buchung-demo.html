@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online-Buchung (Demo) – Demohair</title>
+<meta name="description" content="Demo: So funktioniert die Online-Buchung bei Demohair.">
+<meta name="theme-color" content="#F7F2EC">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fraunces-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__logo" href="index.html" aria-label="Demohair – zur Startseite"><img src="images/logo.svg" alt="Demohair" width="277" height="84"></a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <ul class="nav__list"><li><a class="nav__link" href="index.html">Start</a></li><li><a class="nav__link" href="ueber-uns.html">Über uns</a></li><li><a class="nav__link" href="leistungen.html">Leistungen & Preise</a></li><li><a class="nav__link" href="team.html">Team</a></li><li><a class="nav__link" href="galerie.html">Galerie</a></li><li><a class="nav__link" href="oeffnungszeiten.html">Öffnungszeiten</a></li><li><a class="nav__link" href="kontakt.html">Kontakt</a></li></ul>
+      <a class="btn" href="online-termin.html">Online-Termin</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen"><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <ul><li><a class="m-link" href="index.html">Start</a></li><li><a class="m-link" href="ueber-uns.html">Über uns</a></li><li><a class="m-link" href="leistungen.html">Leistungen & Preise</a></li><li><a class="m-link" href="team.html">Team</a></li><li><a class="m-link" href="galerie.html">Galerie</a></li><li><a class="m-link" href="oeffnungszeiten.html">Öffnungszeiten</a></li><li><a class="m-link" href="kontakt.html">Kontakt</a></li></ul>
+  <a class="btn" href="online-termin.html">Online-Termin buchen</a>
+  <p><a href="tel:+41440000000">044 000 00 00</a><br><a href="mailto:info@demohair.ch">info@demohair.ch</a></p>
+</div>
+<main id="inhalt">
+<section class="page-head bg-cream">
+  <div class="container page-head__grid">
+    <div class="reveal">
+      <span class="label">Demo · Online-Buchung</span>
+      <h1>So würde die Online-Buchung <em>funktionieren</em></h1>
+    </div>
+    <div class="reveal">
+      <p class="lead">Probieren Sie es aus: Wählen Sie eine Leistung, eine Person und einen freien Termin. Ihre Kundschaft bucht genau so – rund um die Uhr.</p>
+    </div>
+  </div>
+</section>
+<section class="section bg-beige">
+  <div class="container">
+    <div class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.2"/></svg><p><strong>Demo-Modus:</strong> Dies ist eine Vorschau. Es wird kein echter Termin gebucht und es werden keine Daten gespeichert oder versendet.</p></div>
+    <div class="booking">
+      <div id="booking">
+        <div class="bk-step"><h3><span>1</span>Leistung wählen</h3><div class="choice-grid"><button type="button" class="choice" data-service="Damen – Schnitt & Föhnen" data-price="ab CHF 89" aria-pressed="false"><b>Damen – Schnitt &amp; Föhnen</b><small>60 Min. · ab CHF 89</small></button><button type="button" class="choice" data-service="Herrenschnitt" data-price="CHF 59" aria-pressed="false"><b>Herrenschnitt</b><small>40 Min. · CHF 59</small></button><button type="button" class="choice" data-service="Schnitt & Bart" data-price="CHF 79" aria-pressed="false"><b>Schnitt &amp; Bart</b><small>60 Min. · CHF 79</small></button><button type="button" class="choice" data-service="Balayage inkl. Schnitt" data-price="ab CHF 309" aria-pressed="false"><b>Balayage inkl. Schnitt</b><small>180 Min. · ab CHF 309</small></button><button type="button" class="choice" data-service="Ansatzfarbe & Föhnen" data-price="ab CHF 130" aria-pressed="false"><b>Ansatzfarbe &amp; Föhnen</b><small>90 Min. · ab CHF 130</small></button><button type="button" class="choice" data-service="Kinderschnitt" data-price="ab CHF 28" aria-pressed="false"><b>Kinderschnitt</b><small>30 Min. · ab CHF 28</small></button><button type="button" class="choice" data-service="Hochsteckfrisur" data-price="ab CHF 95" aria-pressed="false"><b>Hochsteckfrisur</b><small>60 Min. · ab CHF 95</small></button><button type="button" class="choice" data-service="Pflege-Ritual" data-price="CHF 35" aria-pressed="false"><b>Pflege-Ritual</b><small>20 Min. · CHF 35</small></button></div></div>
+        <div class="bk-step"><h3><span>2</span>Bei wem?</h3><div class="choice-grid"><button type="button" class="choice choice--person" data-person="Lea Brunner" aria-pressed="false"><img src="images/team-lea.webp" alt="" width="44" height="52" loading="lazy"><span><b>Lea Brunner</b><small>Farbe</small></span></button><button type="button" class="choice choice--person" data-person="Sofia Meier" aria-pressed="false"><img src="images/team-sofia.webp" alt="" width="44" height="52" loading="lazy"><span><b>Sofia Meier</b><small>Styling</small></span></button><button type="button" class="choice choice--person" data-person="Marco Keller" aria-pressed="false"><img src="images/team-marco.webp" alt="" width="44" height="52" loading="lazy"><span><b>Marco Keller</b><small>Herren</small></span></button><button type="button" class="choice choice--person" data-person="Nina Graf" aria-pressed="false"><img src="images/team-nina.webp" alt="" width="44" height="52" loading="lazy"><span><b>Nina Graf</b><small>Locken &amp; Pflege</small></span></button><button type="button" class="choice choice--person" data-person="Erste freie Person" aria-pressed="false"><span><b>Erste freie Person</b><small>Schnellster Termin</small></span></button></div></div>
+        <div class="bk-step"><h3><span>3</span>Datum &amp; Uhrzeit</h3><div class="days"></div><div class="slots"><p class="muted" style="margin:0">Bitte wählen Sie zuerst einen Tag.</p></div></div>
+      </div>
+      <aside class="summary" aria-live="polite">
+        <span class="label">Ihre Buchung</span>
+        <dl>
+          <div><dt>Leistung</dt><dd data-sum="service">–</dd></div>
+          <div><dt>Bei</dt><dd data-sum="person">–</dd></div>
+          <div><dt>Termin</dt><dd data-sum="date">–</dd></div>
+        </dl>
+        <button class="btn" id="bk-confirm" type="button" disabled>Termin bestätigen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+        <p class="summary__hint">Kostenlos stornierbar bis 24 h vorher</p>
+      </aside>
+    </div>
+    <div class="confirm" role="status">
+      <div class="confirm__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <span class="label">Demo-Bestätigung</span>
+      <h2>Vielen Dank – Ihr Termin ist <em>reserviert</em></h2>
+      <p class="muted">So sieht die Bestätigung für Ihre Kundschaft aus. Im Live-Betrieb folgt zusätzlich eine E-Mail mit Kalendereintrag und am Vortag eine SMS-Erinnerung.</p>
+      <dl class="confirm__card">
+        <div><dt>Leistung</dt><dd data-c="service"></dd></div>
+        <div><dt>Bei</dt><dd data-c="person"></dd></div>
+        <div><dt>Datum</dt><dd data-c="date"></dd></div>
+        <div><dt>Uhrzeit</dt><dd data-c="time"></dd></div>
+        <div><dt>Ort</dt><dd>Demohair, Musterstrasse 1, 8000 Demostadt</dd></div>
+        <div><dt>Buchungsnummer</dt><dd>DH-2026-0815</dd></div>
+      </dl>
+      <div class="btn-row" style="justify-content:center">
+        <button class="btn btn--outline" type="button" data-booking-reset>Demo neu starten</button>
+        <a class="btn" href="index.html">Zur Startseite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section bg-cream">
+  <div class="container">
+    <div class="reveal"><span class="label">Im Live-Betrieb</span><h2>Was die Online-Buchung für Ihren <em>Salon</em> leistet</h2></div>
+    <div class="features" style="margin-top:2.5rem">
+      <div class="feature reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Echtzeit-Kalender</h3><p>Synchron mit dem Salon-Kalender – keine Doppelbuchungen.</p></div>
+      <div class="feature reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5h4"/></svg><h3>Erinnerungen</h3><p>Automatische SMS und E-Mails reduzieren Ausfälle spürbar.</p></div>
+      <div class="feature reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.5 2"/></svg><h3>Weniger Telefon</h3><p>Das Team konzentriert sich ganz auf die Kundschaft im Salon.</p></div>
+      <div class="feature reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h3>Mobil optimiert</h3><p>Funktioniert auf jedem Smartphone – in unter zwei Minuten.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a class="footer__logo" href="index.html"><img src="images/logo.svg" alt="Demohair" width="277" height="84" loading="lazy"></a>
+        <p>Ihr Coiffeur im Herzen von Demostadt – für Schnitt, Farbe und Styling mit Handschrift.</p>
+        <span class="status" data-status><span class="status__dot"></span><span class="status__text">Öffnungszeiten</span></span>
+      </div>
+      <div>
+        <span class="label">Besuchen</span>
+        <p>Demohair Coiffeur<br>Musterstrasse 1<br>8000 Demostadt</p>
+      </div>
+      <div>
+        <span class="label">Kontakt</span>
+        <ul>
+          <li><a href="tel:+41440000000">044 000 00 00</a></li>
+          <li><a href="mailto:info@demohair.ch">info@demohair.ch</a></li>
+          <li><a href="online-termin.html">Online-Termin buchen</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="label">Öffnungszeiten</span>
+        <ul>
+          <li>Di – Fr · 08:30 – 18:30</li>
+          <li>Do · bis 20:00</li>
+          <li>Sa · 08:00 – 15:00</li>
+          <li>So &amp; Mo geschlossen</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Demohair Coiffeur · Demostadt</span>
+      <span class="footer__credit">Website by <b>TL-Buildwebsites</b></span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
